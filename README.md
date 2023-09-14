@@ -28,6 +28,7 @@ Full Cycle Rocks!
     
     OBSERVAÇÃO: Crie o arquivo .gitignore e coloque node_modules para não subir para o git.
     echo "node_modules" > .gitignore 
+    echo "mysql " >> .gitignore 
 
 ```
 ### PASSO 01: Gere o docker-compose
@@ -55,20 +56,18 @@ CONTAINER ID   IMAGE                 COMMAND                  CREATED          S
 ```
 
 ### PASSO 03: Abra o browser
-localhost:8080
+  http://localhost:8080
 
-### PASSO 04: Pare o serviço e vamos atualizr no git
+### PASSO 04: Pare o serviço e vamos atualizar no git
 
 docker-compose down
 
 git init 
 init add . 
 git status
-git push 
+git commit -m "Desafio completo" 
+https://github.com/gilbertodfl/fullcyle_nginx_node_mysql.git
+git push -u origin main
 
 ```
 
-
-Suba tudo em um repositório e faça a entrega.
-
-* A linguagem de programação para este desafio é Node/JavaScript.
